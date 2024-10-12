@@ -26,7 +26,7 @@ export default function AboutUs({ userData ,pageData }) {
     <Head>
     <link
             rel="stylesheet"
-            href={`https://demo-wp-app2-aqhegvdqe2e6e9fq.southindia-01.azurewebsites.net/wp-content/uploads/elementor/css/post-${pageData?.pageId}.css`}
+            href={`https://taciti.coinage.host/wp-content/uploads/elementor/css/post-${pageData?.pageId}.css`}
             media="all"
           />
     </Head>

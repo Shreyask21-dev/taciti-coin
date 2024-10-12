@@ -14,7 +14,7 @@ export default function AllPages({ AllsinglePageList }) {
 
           <link
             rel="stylesheet"
-            href={`https://demo-wp-app2-aqhegvdqe2e6e9fq.southindia-01.azurewebsites.net/wp-content/uploads/elementor/css/post-${AllsinglePageList?.data?.page?.pageId}.css`}
+            href={`https://taciti.coinage.host/wp-content/uploads/elementor/css/post-${AllsinglePageList?.data?.page?.pageId}.css`}
             media="all"
           />
         </Head>
