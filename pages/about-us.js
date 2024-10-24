@@ -26,7 +26,7 @@ export default function AboutUs({ userData ,pageData }) {
     <Head>
     <link
             rel="stylesheet"
-            href={`https://taciti.coinage.host/wp-content/uploads/elementor/css/post-${pageData?.pageId}.css`}
+            href={`http://taciti-wp-backend-prd-h3c8hrcfh6hme2fb.southindia-01.azurewebsites.net/wp-content/uploads/elementor/css/post-${pageData?.pageId}.css`}
             media="all"
           />
     </Head>
@@ -48,8 +48,6 @@ export default function AboutUs({ userData ,pageData }) {
         
            <div className="container">
           <div className="row  about-team-class">
-           
-
             <div className="space5"></div>
             {userData?.map((item, index) => (
               <div
@@ -111,50 +109,6 @@ export default function AboutUs({ userData ,pageData }) {
   );
 }
 
-// export async function getServerSideProps() {
-//   try {
-//     const response = await fetch(`${BASEPATH}graphql`, {
-//       method: "POST",
-//       headers: { "Content-Type": "application/json" },
-//       body: JSON.stringify({
-//         query: `
-//             query NewQuery {
-//               teams {
-//                 nodes {
-//                   title
-//                   content
-//                   excerpt
-//                   databaseId
-//                   featuredImage {
-//                     node {
-//                       guid
-//                     }
-//                   }
-//                 }
-//               }
-//             }
-//           `,
-//       }),
-//     });
-
-//     const data = await response.json();
-
-//     return {
-//       props: {
-//         userData: data.data.teams.nodes,
-//       },
-//     };
-//   } catch (error) {
-//     console.error("Error fetching data:", error);
-
-//     return {
-//       props: {
-//         userData: null,
-//         error: "Error fetching data",
-//       },
-//     };
-//   }
-// }
 
 
 
@@ -190,7 +144,7 @@ export async function getServerSideProps() {
         body: JSON.stringify({
           query: `
             query {
-              page(id: "about-us", idType: URI) {
+              page(id: "about", idType: URI) {
                 content
                 pageId
                 title
