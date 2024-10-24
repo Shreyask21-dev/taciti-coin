@@ -5882,14 +5882,14 @@ ul.elementor-icon-list-items.elementor-inline-items .elementor-inline-item {
 
 .elementor-1338 .elementor-element.elementor-element-a02e445:not(.elementor-motion-effects-element-type-background),
 .elementor-1338 .elementor-element.elementor-element-a02e445>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("http://taciti-wp-backend-prd-h3c8hrcfh6hme2fb.southindia-01.azurewebsites.net/wp-content/uploads/2024/02/Background-arrow.png");
+    background-image: url("https://taciti.coinage.host//wp-content/uploads/2024/02/Background-arrow.png");
     background-position: 0px 240px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .elementor-1338 .elementor-element.elementor-element-a02e445>.elementor-background-overlay {
-    background-image: url("http://taciti-wp-backend-prd-h3c8hrcfh6hme2fb.southindia-01.azurewebsites.net/wp-content/uploads/2024/02/assets-02-1.png");
+    background-image: url("https://taciti.coinage.host//wp-content/uploads/2024/02/assets-02-1.png");
     background-repeat: no-repeat;
     background-size: contain;
     opacity: 1;
@@ -6151,7 +6151,7 @@ body:not(.rtl) .elementor-1338 .elementor-element.elementor-element-deeb68d .ele
 
 .elementor-1338 .elementor-element.elementor-element-7e9389a:not(.elementor-motion-effects-element-type-background)>.elementor-widget-wrap,
 .elementor-1338 .elementor-element.elementor-element-7e9389a>.elementor-widget-wrap>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("http://taciti-wp-backend-prd-h3c8hrcfh6hme2fb.southindia-01.azurewebsites.net/wp-content/uploads/2024/02/assets-24.png");
+    background-image: url("https://taciti.coinage.host//wp-content/uploads/2024/02/assets-24.png");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: contain;

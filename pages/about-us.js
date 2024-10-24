@@ -26,7 +26,7 @@ export default function AboutUs({ userData ,pageData }) {
     <Head>
     <link
             rel="stylesheet"
-            href={`http://taciti-wp-backend-prd-h3c8hrcfh6hme2fb.southindia-01.azurewebsites.net/wp-content/uploads/elementor/css/post-${pageData?.pageId}.css`}
+            href={`https://taciti.coinage.host//wp-content/uploads/elementor/css/post-${pageData?.pageId}.css`}
             media="all"
           />
     </Head>
@@ -144,7 +144,7 @@ export async function getServerSideProps() {
         body: JSON.stringify({
           query: `
             query {
-              page(id: "about", idType: URI) {
+              page(id: "about-us", idType: URI) {
                 content
                 pageId
                 title

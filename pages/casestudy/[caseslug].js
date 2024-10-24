@@ -12,14 +12,14 @@ export default function AllPages({ AllsinglePageList }) {
         <Head>
           <link
             rel="stylesheet"
-            href="http://taciti-wp-backend-prd-h3c8hrcfh6hme2fb.southindia-01.azurewebsites.net/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.27.0"
+            href="https://taciti.coinage.host//wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.27.0"
             media="all"
           />
           
 
           <link
             rel="stylesheet"
-            href={`http://taciti-wp-backend-prd-h3c8hrcfh6hme2fb.southindia-01.azurewebsites.net/wp-content/uploads/elementor/css/post-${AllsinglePageList?.data?.casestudy?.casestudyId}.css`}
+            href={`https://taciti.coinage.host//wp-content/uploads/elementor/css/post-${AllsinglePageList?.data?.casestudy?.casestudyId}.css`}
             media="all"
           />
         </Head>
