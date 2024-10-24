@@ -2262,3 +2262,15 @@ body .pops {
       display: flex;
   }
 }
+
+
+.about-css{
+	display:block !important;
+	margin-top:-150px !important; 
+}
+@media (max-width: 767px) { /* Adjust the max-width as needed for your mobile view */
+    .about-css {
+        display: block !important;
+        margin-top: 0px !important; 
+    }
+}
