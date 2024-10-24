@@ -79,12 +79,63 @@ export default function Contact() {
 
 
   // This function handles the submission
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setIsSubmitting(true);
+
+
+
+  //   try {
+  //     const res = await fetch('/api/contact', {
+  //       method: 'POST',
+  //       headers: { 'Content-Type': 'application/json' },
+  //       body: JSON.stringify({
+  //         firstName,
+  //         lastName,
+  //         email,
+  //         phone,
+  //         company,
+  //         country,
+  //         description,
+  //         selectedIndustry,
+  //         selectedService,
+         
+  //       }),
+  //     });
+
+  //     const data = await res.json();
+  //     setMessage(data.success ? "Message sent successfully" : "Error sending message");
+  //     if (data.success) {
+  //       // Clear the form fields if submission was successful
+  //       setFirstName("");
+  //       setLastName("");
+  //       setEmail("");
+  //       setPhone("");
+  //       setCompany("");
+  //       setCountry("");
+  //       setDescription("");
+  //       setSelectedIndustry(null);
+  //       setSelectedService(null);
+  //     }
+  //   } catch (error) {
+  //     setMessage("An error occurred.");
+  //   }
+
+  //   setIsSubmitting(false);
+  // };
+
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+  
+    // Simple validation check for empty fields
+    if (!firstName || !lastName || !email || !phone || !company || !country || !selectedIndustry || !selectedService) {
+      setMessage("Please fill out all required fields.");
+      return;  // Prevent form submission if any field is empty
+    }
+  
     setIsSubmitting(true);
-
-
-
+  
     try {
       const res = await fetch('/api/contact', {
         method: 'POST',
@@ -99,12 +150,12 @@ export default function Contact() {
           description,
           selectedIndustry,
           selectedService,
-         
         }),
       });
-
+  
       const data = await res.json();
       setMessage(data.success ? "Message sent successfully" : "Error sending message");
+      
       if (data.success) {
         // Clear the form fields if submission was successful
         setFirstName("");
@@ -120,11 +171,10 @@ export default function Contact() {
     } catch (error) {
       setMessage("An error occurred.");
     }
-
+  
     setIsSubmitting(false);
   };
-
-
+  
 
 
 
